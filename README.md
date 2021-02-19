@@ -28,7 +28,7 @@ This project is a Clubhouse app. The idea is to create an app where the members 
 
 - GitHub: [@NoTengoBattery](https://github.com/NoTengoBattery)
 - Twitter: [@NoTengoBattery](https://twitter.com/NoTengoBattery)
-- LinkedIn: [@notengobattery](hhttps://www.linkedin.com/in/notengobattery/)
+- LinkedIn: [@notengobattery](https://www.linkedin.com/in/notengobattery/)
 
 ## SHOW YOUR SUPPORT
 Give a :star: if you like this project!
