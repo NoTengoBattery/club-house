@@ -2,7 +2,7 @@
 
 <div class="card">
   <div class="card-body">
-    <p class="card-title"><strong>Poster:</strong> <%= user_signed_in? ? @post.user.user_name : '...' %></p>
+    <p class="card-title"><strong>Poster:</strong> <%= show_user(@post) %></p>
     <p class="card-text"><strong>Post:</strong><%= @post.post %></p>
   </div>
 </div>

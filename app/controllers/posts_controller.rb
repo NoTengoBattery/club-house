@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
-  before_action :logged_in, except: %i[index show]
-  before_action :user_is_owner, only: %i[edit update destroy]
+  before_action :logged_in, only: %i[create new]
 
   # GET /posts or /posts.json
   def index
@@ -58,13 +57,6 @@ class PostsController < ApplicationController
   end
 
   private
-
-  def user_is_owner
-    return unless Post.find(params[:id]).user != current_user
-
-    flash.alert = 'You are not authorized to perform this action!'
-    redirect_to posts_url
-  end
 
   def logged_in
     authenticate_user!
