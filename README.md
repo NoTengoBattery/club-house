@@ -5,6 +5,7 @@ This project is a Clubhouse app. The idea is to create an app where the members 
 - Clone the repository: `git clone` https://github.com/NoTengoBattery/club-house.git
 - Move inside the club-house folder: `cd club-house`
 - Run the server: `rails s` or `rails server`
+- Run: `rails db:create` and `rails db:migrate`.
 - To see the app on your local machine open your browser and type: `localhost:3000`. Have fun !!!
 
 ## BUILT WITH
