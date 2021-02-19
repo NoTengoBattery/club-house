@@ -1,18 +1,11 @@
-<p id="notice"><%= notice %></p>
+<h1>Post #<%=@post.id %></h1>
 
-<p>
-  <strong>Post:</strong>
-  <%= @post.post %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <% if user_signed_in? %>
-    <%= @post.user.user_name %>
-  <% else %>
-    ...
-  <% end %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<div class="card">
+  <div class="card-body">
+    <p class="card-title"><strong>Poster:</strong> <%= user_signed_in? ? @post.user.user_name : '...' %></p>
+    <p class="card-text"><strong>Post:</strong><%= @post.post %></p>
+  </div>
+</div>
+<hr>
+<%= link_to 'Edit', edit_post_path(@post), class: "link-primary"  %> |
+<%= link_to 'Back', posts_path, class: "link-secondary" %>

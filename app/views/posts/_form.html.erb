@@ -1,8 +1,9 @@
 <%= form_with(model: post) do |form| %>
   <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
-
+    <div id="error_explanation" class="alert alert-warning">
+      <p class="lead">
+        <strong><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</strong>
+      </p>
       <ul>
         <% post.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -11,12 +12,10 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :post %>
-    <%= form.text_area :post %>
+    <%= form.text_area :post, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= form.submit class: "btn btn-primary" %>
 <% end %>
