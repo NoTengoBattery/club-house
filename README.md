@@ -1,6 +1,9 @@
 # ClubHouse
 This project is a Clubhouse app. The idea is to create an app where the members of the Club can publish posts anonymously. Everyone outside the club should be able to see those posts but not the name of the author unless they are members of the Club.
 
+## App Home Page
+![](app/assets/images/screenshot.png)
+
 ## Getting Started :
 - Clone the repository: `git clone` https://github.com/NoTengoBattery/club-house.git
 - Move inside the club-house folder: `cd club-house`
