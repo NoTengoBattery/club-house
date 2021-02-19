@@ -59,8 +59,10 @@ class PostsController < ApplicationController
   private
 
   def user_is_owner
-    my_post = Post.find(params[:id])
-    redirect_to posts_url unless my_post.user == current_user
+    return unless Post.find(params[:id]).user != current_user
+
+    flash.alert = 'You are not authorized to perform this action!'
+    redirect_to posts_url
   end
 
   def logged_in
