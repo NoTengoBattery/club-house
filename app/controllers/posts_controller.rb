@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
-  before_action :logged_in, except: %i[index show]
-  before_action :user_is_owner, only: %i[edit update destroy]
+  before_action :logged_in, only: %i[create new]
 
   # GET /posts or /posts.json
   def index
@@ -13,6 +12,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
+    @post = Post.new
     @post = current_user.posts.build
   end
 
@@ -57,11 +57,6 @@ class PostsController < ApplicationController
   end
 
   private
-
-  def user_is_owner
-    my_post = Post.find(params[:id])
-    redirect_to posts_url unless my_post.user == current_user
-  end
 
   def logged_in
     authenticate_user!

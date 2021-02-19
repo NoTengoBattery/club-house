@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", media: "all" %>
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=ABCDEFG&libraries=places", :defer => "defer" %> 
-
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -16,6 +14,7 @@
   <body>
     <%= render "shared/nav_bar" %>
     <div class="container">
+      <%= render 'shared/alert' %>
       <%= yield %>
     </div>
   </body>

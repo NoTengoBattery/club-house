@@ -1,24 +1,41 @@
-# README
+# ClubHouse
+This project is a Clubhouse app. The idea is to create an app where the members of the Club can publish posts anonymously. Everyone outside the club should be able to see those posts but not the name of the author unless they are members of the Club.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## App Home Page
+![](app/assets/images/screenshot.png)
 
-Things you may want to cover:
+## Getting Started :
+- Clone the repository: `git clone` https://github.com/NoTengoBattery/club-house.git
+- Move inside the club-house folder: `cd club-house`
+- Run: `rails db:create` and `rails db:migrate`.
+- Run the server: `rails s` or `rails server`
+- To see the app on your local machine open your browser and type: `localhost:3000`. Have fun !!!
 
-* Ruby version
+## BUILT WITH
 
-* System dependencies
+    -HTML
+    -CSS
+    -bootstrap
+    -Ruby
+    -Ruby on Rails
 
-* Configuration
 
-* Database creation
+##  AUTHORS
 
-* Database initialization
+👤 **Widzmarc Jean Nesly Phelle**
 
-* How to run the test suite
+- GitHub: [@widzthedvloper](https://github.com/widzthedvloper)
+- Twitter: [@widzthedvloper](https://twitter.com/widzthedvloper)
+- LinkedIn: [@widzthedvloper](https://www.linkedin.com/in/widzmarc-jean-nesly-phelle-252a26129/)
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Oever González**
 
-* Deployment instructions
+- GitHub: [@NoTengoBattery](https://github.com/NoTengoBattery)
+- Twitter: [@NoTengoBattery](https://twitter.com/NoTengoBattery)
+- LinkedIn: [@notengobattery](https://www.linkedin.com/in/notengobattery/)
 
-* ...
+## SHOW YOUR SUPPORT
+Give a :star: if you like this project!
+
+## 📝 LICENSE
+This project is [MIT](/LICENSE) licensed.
