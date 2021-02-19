@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Post</th>
+      <th scope="col">User</th>
+      <th scope="col" colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td scope="row"><%= post.post %></td>
+        <% if user_signed_in? %>
+          <td><%= post.user.user_name %></td>
+        <% else %>
+          <td>...</td>
+        <% end %>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
