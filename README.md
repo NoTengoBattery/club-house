@@ -11,6 +11,9 @@ This project is a Clubhouse app. The idea is to create an app where the members 
 - Run the server: `rails s` or `rails server`
 - To see the app on your local machine open your browser and type: `localhost:3000`. Have fun !!!
 
+## Live preview
+Check this application deployed to Heroku using [this](https://fierce-ocean-40125.herokuapp.com/) link.
+
 ## BUILT WITH
 
     -HTML
